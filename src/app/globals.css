@@ -25,3 +25,26 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+.node__root > circle {
+  fill: red;
+  r: 20;
+  
+}
+
+.rd3t-label__title {
+  font-size: 10px; 
+  transform: translate(-60px, 40px);
+}
+
+.node__branch > circle {
+  fill: yellow;
+  r: 15;
+}
+
+.node__leaf > circle {
+  fill: green;
+  /* Let's also make the radius of leaf nodes larger */
+  r: 15;
+}

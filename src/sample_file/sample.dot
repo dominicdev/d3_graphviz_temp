@@ -1,0 +1,44 @@
+digraph FiveGoodEmperors {
+    node [shape=ellipse];
+    
+    // Main Node
+    "The 5 Great Emperors";
+
+    // First Layer: Emperors
+    "Nerva" [shape=box];
+    "Trajan" [shape=box];
+    "Hadrian" [shape=box];
+    "Antoninus Pius" [shape=box];
+    "Marcus Aurelius" [shape=box];
+
+    // Connecting Main Node to Emperors
+    "The 5 Great Emperors" -> "Nerva";
+    "The 5 Great Emperors" -> "Trajan";
+    "The 5 Great Emperors" -> "Hadrian";
+    "The 5 Great Emperors" -> "Antoninus Pius";
+    "The 5 Great Emperors" -> "Marcus Aurelius";
+
+    // Second Layer: Facts about Emperors
+    "Nerva Adoptive Succession";
+    "Trajan Expansion";
+    "Hadrian Wall";
+    "Antoninus Peace";
+    "Marcus Stoicism";
+
+    // Connecting Emperors to Facts
+    "Nerva" -> "Nerva Adoptive Succession";
+    "Trajan" -> "Trajan Expansion";
+    "Hadrian" -> "Hadrian Wall";
+    "Antoninus Pius" -> "Antoninus Peace";
+    "Marcus Aurelius" -> "Marcus Stoicism";
+
+    // Third Layer: Additional Facts
+    "Trajan Dacian Wars";
+    "Hadrian Travel";
+    "Marcus Meditations";
+
+    // Connecting Facts to Additional Facts
+    "Trajan Expansion" -> "Trajan Dacian Wars";
+    "Hadrian Wall" -> "Hadrian Travel";
+    "Marcus Stoicism" -> "Marcus Meditations";
+}
