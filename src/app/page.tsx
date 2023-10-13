@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
 import { useCenteredTree } from './components/helper';
 import { Graphviz } from "@hpcc-js/wasm/graphviz";
-import GraphComponent from './components/raphComponent';
+
 export default function Home() {
   const inputdrop: any = useRef(null);
   const svgRef: any = useRef(null);

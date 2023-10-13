@@ -32,6 +32,8 @@ const ZoomableIframe: React.FC<ZoomableIframeProps> = ({ src, width, height }) =
               {/* Your div goes here */}
               <div style={{ position: 'absolute', top: 50, left: 50, zIndex: 2 }}>
                 {/* Your content inside the div */}
+
+                
                 <p>Your draggable content</p>
               </div>
               {/* The iframe */}
