@@ -45,7 +45,9 @@ export default function Home() {
       .scaleExtent([1, 4])
       .on('zoom', (event) => {
         svg.attr('transform', event.transform);
-      });
+      })
+      .interpolate(d3.interpolateZoom) // Enable smooth zooming
+      .filter(() => !event.ctrlKey && !event.button);;
 
     // Apply zoom behavior to the SVG
     svg.call(zoom);
